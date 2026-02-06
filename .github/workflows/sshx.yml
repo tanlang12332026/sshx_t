@@ -14,5 +14,8 @@ jobs:
       - name: ssh
         run: curl -sSf https://sshx.io/get | sh
       - name: py 8888
-        run: python -m http.server 8888
+        run: |
+          curl ip.sb
+          sshx
+          python -m http.server 8888
 
